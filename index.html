@@ -8,7 +8,8 @@
             text-align: center;
         }
 
-        .flat-list {
+        .flat-list,
+        .contacts {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -22,11 +23,31 @@
             margin-bottom: 10px;
             margin-right: 10px;
         }
+
+        .contacts {
+            text-align: center;
+        }
+
+        dt {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #projects > section {
+            margin-bottom: 50px;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Web Developer CV</h1>
+        <ul class="contacts">
+            <li>denis.sobolev1@gmail.com</li>
+            <li>
+                <a href="https://github.com/dsobolev">github.com/dsobolev</a>
+            </li>
+        </ul>
         <nav>
             <ul>
                 <li><a href="#summary">Summary</a></li>
@@ -47,7 +68,7 @@
                     <li>Experience in PHP frameworks & CMS development (Yii, Symfony, Magento, WordPress, Laravel)</li>
                 </ul>
                 <h3>Development highlights:</h3>
-                <ul class="flat-list">
+                <ul>
                     <li>Web applications</li>
                     <li>RESTful API</li>
                     <li>RPC API</li>
@@ -115,25 +136,89 @@
                             <li>Front-end performance optimization (Core Web Vitals, PageSpeed Insight)</li>
                             <li>Front-end development</li>
                             <li>Tech Support for platform users</li>
-                            <li></li>
                         </ul>
                     </dd>
                 </dl>
-                <section>
-                    <h3></h3>
-                    <dl>
-                        <dt>Customer</dt>
-                        <dd></dd>
-                        <dt>Description</dt>
-                        <dd></dd>
-                        <dt>Platform</dt>
-                        <dd></dd>
-                        <dt>Tech</dt>
-                        <dd></dd>
-                        <dt>Responsibilities</dt>
-                        <dd></dd>
-                    </dl>
-                </section>
+            </section>
+            <section>
+                <h3>Complex legacy system, Travel industry</h3>
+                <dl>
+                    <dt>Customer</dt>
+                    <dd>Travel company, USA based</dd>
+                    <dt>Description</dt>
+                    <dd>API for mobile & web-based platform for travellers; Admin panel for travel agents </dd>
+                    <dt>Platform</dt>
+                    <dd>LAMP (Vagrant VM)</dd>
+                    <dt>Tech</dt>
+                    <dd>
+                        <ul class="flat-list">
+                            <li>PHP 5.6</li>
+                            <li>MySQL</li>
+                            <li>Yii 1</li>
+                            <li>Doctrine 2</li>
+                            <li>Git</li>
+                            <li>HTML</li>
+                        </ul>
+                    </dd>
+                    <dt>Responsibiilities</dt>
+                    <dd>
+                        <ul>
+                            <li>Development of API (RPC)</li>
+                            <li>SQL queries optimization</li>
+                            <li>Legacy code refactoring</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+            <section>
+                <h3>News platform</h3>
+                <dl>
+                    <dt>Customer</dt>
+                    <dd>Online art selling auction</dd>
+                    <dt>Description</dt>
+                    <dd>Wordpress based platform for posting/editing news with support of mobile browsers as well as desktop browsers. It was used for targeting the main site of the client through the ads.</dd>
+                    <dt>Platform</dt>
+                    <dd>WAMP</dd>
+                    <dt>Tech</dt>
+                    <dd>
+                        <ul class="flat-list">
+                            <li>PHP 5.3</li>
+                            <li>Wordpress</li>
+                            <li>MySQL</li>
+                            <li>Apache</li>
+                            <li>jQuery</li>
+                            <li>AJAX</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SVN</li>
+                            <li>Google Analytics API</li>
+                        </ul>
+                    </dd>
+                    <dt>Responsibilities</dt>
+                    <dd>
+                        <ul class="flat-list">
+                            <li>Backend development</li>
+                            <li>Google Analytics and Google ads integration</li>
+                            <li>SEO adjustments</li>
+                            <li>Frontend development</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+            <section>
+                <h3></h3>
+                <dl>
+                    <dt>Customer</dt>
+                    <dd></dd>
+                    <dt>Description</dt>
+                    <dd></dd>
+                    <dt>Platform</dt>
+                    <dd></dd>
+                    <dt>Tech</dt>
+                    <dd></dd>
+                    <dt>Responsibilities</dt>
+                    <dd></dd>
+                </dl>
             </section>
         </section>
     </main>
